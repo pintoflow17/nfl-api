@@ -31,7 +31,7 @@ Retrieves player IDs and basic information for a specific NFL team.
 #### Example request:
 
 ```javascript
-fetch('https://nfl-api1.p.rapidapi.com//players/id?teamId=22', {
+fetch('https://nfl-api1.p.rapidapi.com/players/id?teamId=22', {
   method: 'GET',
   headers: {
     'x-rapidapi-host': 'nhl-api5.p.rapidapi.com',
@@ -73,6 +73,23 @@ Retrieves team IDs and basic information for NFL teams.
 - **Method:** GET
 - **Query Parameters:**
   - `limit` (optional): The maximum number of teams to retrieve - default is 40
+ 
+
+#### Example request:
+
+```javascript
+fetch('https://nfl-api1.p.rapidapi.com/team/id?limit=25', {
+  method: 'GET',
+  headers: {
+    'x-rapidapi-host': 'nhl-api5.p.rapidapi.com',
+    'x-rapidapi-key': 'API_KEY' // Replace 'API_KEY' with your API key
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
 
 #### Success Response
 
