@@ -12,7 +12,7 @@ The API requires the headers listed below:
 - **`x-rapidapi-host`**: `https://nfl-api1.p.rapidapi.com`
 - **`x-rapidapi-key`**: `YOUR_API_KEY`
 
-Make sure to replace `YOUR_API_KEY` with your API key. You can register one [here]([https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/financial-calculators/pricing](https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/nfl-api1/pricing)).
+Make sure to replace `YOUR_API_KEY` with your API key. You can register one [here](https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/nfl-api1/pricing)).
 Some frameworks automatically add extra headers, you have to make sure to remove them in order to get a response from the API.
 
 ## Endpoints
@@ -27,6 +27,23 @@ Retrieves player IDs and basic information for a specific NFL team.
 - **Method:** GET
 - **Query Parameters:**
   - `teamId` (required): The ID of the NFL team
+ 
+Example request:
+
+```javascript
+fetch('https://nfl-api1.p.rapidapi.com//players/id?teamId=22', {
+  method: 'GET',
+  headers: {
+    'x-rapidapi-host': 'nhl-api5.p.rapidapi.com',
+    'x-rapidapi-key': 'API_KEY' // Replace 'API_KEY' with your API key
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+
 
 #### Success Response
 
