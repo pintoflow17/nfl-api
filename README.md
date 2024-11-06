@@ -116,6 +116,22 @@ Retrieves the play-by-play data for a specified NFL game.
 - **Method:** GET
 - **Query Parameters:**
   - `id` (required): The ID of the NFL game
+ 
+#### Example request:
+
+```javascript
+fetch('https://nfl-api1.p.rapidapi.com/nflplay?id=401220403', {
+  method: 'GET',
+  headers: {
+    'x-rapidapi-host': 'nhl-api5.p.rapidapi.com',
+    'x-rapidapi-key': 'API_KEY' // Replace 'API_KEY' with your API key
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
 
 #### Success Response
 
