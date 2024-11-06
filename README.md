@@ -28,7 +28,7 @@ Retrieves player IDs and basic information for a specific NFL team.
 - **Query Parameters:**
   - `teamId` (required): The ID of the NFL team
  
-Example request:
+#### Example request:
 
 ```javascript
 fetch('https://nfl-api1.p.rapidapi.com//players/id?teamId=22', {
